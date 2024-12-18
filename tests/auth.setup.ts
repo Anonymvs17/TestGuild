@@ -8,7 +8,7 @@ setup('authenticate', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     await loginPage.goto();
-    await loginPage.login('standard_user', 'secret_sauce');
+    await loginPage.login('standard_user', 'secret_sauce_password');
     // Wait until the page receives the cookies.
     //
     // Sometimes login flow sets cookies in the process of several redirects.
